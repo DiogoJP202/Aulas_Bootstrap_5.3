@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+    <title>Input Group</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="m-5">
+    <h2 class="my-2">Grupo prepend</h2>
+    <!--Colocamos nossos inputs dentro de uma div com a classe "input-group" para a estilização funcionar.-->
+    <div class="input-group mb-3">
+        <!--Na tag span colocamos o nosso conteúdo adicional referente ao nosso input.-->
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Email">
+    </div>
+    
+    <h2 class="my-2">Grupo append</h2>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Email"> 
+        <span class="input-group-text">@exemple.com</span>
+    </div>
+
+    <h2 class="my-2">URL customizada</h2>
+    <div class="input-group">
+        <label for="basic-url" class="form-label">Sua URL aqui!</label>
+        <div class="input-group" id="basic-url">
+            <span class="input-group-text">https://exemple.com/user/</span>
+            <input type="text" id="basic-url" class="form-control">
+        </div>
+        <div class="form-text" ></div>Exemplo de texto de ajuda que fica fora do input group</div> 
+    </div> 
+        
+    <h2 class="my-2">Moeda</h2>
+    <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control">
+        <span class="input-group-text">.00</span>            
+    </div>
+
+    <h2 class="my-2">Checkbox e Radio</h2>
+    <div class="input-group">
+        <div class="input-group-text">
+            <input type="checkbox" class="form-check-input">
+        </div>
+        <input type="text" class="form-control">
+    </div>
+   
+    <div class="input-group">
+        <div class="input-group-text">
+            <input type="radio" class="form-check-input">
+        </div>
+        <input type="text" class="form-control">
+    </div>
+
+    <h2 class="my-2">Multiplos</h2>
+    <div class="input-group">
+        <span class="input-group-text">Primeiro e Ultimo nome</span>
+        <input type="text" class="form-control">
+        <input type="text" class="form-control">
+    </div>
+   
+   <h2 class="my-2">Pesquisa</h2>
+   <div class="input-group">
+        <input type="text" class="form-control">
+        <button type="button" class="btn btn-primary">Pesquisar</button>
+    </div> 
+    
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

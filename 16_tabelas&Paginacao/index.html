@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+    <title>Tabelas e Paginação</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <h2>Estrutura basica de tables</h2>
+    <!--Para adicionar a estililzação bootstrap a nossa tabela, apenas adicione a classe "table" a tabela-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>João</td>
+                <td>Soares</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacó</td>
+                <td>Marcelo</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry o passaro</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Podemos adicionar cores a nossas tabelas</h2>
+    <!--Podemos adicionar a cor usando a classe "table-" + a cor. Também podemos adicionar em outros elementos de nossa tabela.-->
+    <table class="table table-primary">
+        <thead class="table-warning">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-success">
+                <th scope="row">1</th>
+                <td>João</td>
+                <td>Soares</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row" class="table-danger">2</th>
+                <td>Jacó</td>
+                <td>Marcelo</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2" class="table-dark">Larry o passaro</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Podemos criar tabelas listradas por verticalmente</h2>
+    <table class="table table-striped-columns">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>João</td>
+                <td>Soares</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacó</td>
+                <td>Marcelo</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry o passaro</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Podemos criar tabelas listadas horizontalmente</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>João</td>
+                <td>Soares</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacó</td>
+                <td>Marcelo</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry o passaro</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Tabelas com hover</h2>
+    <!--Para criar tabelas com hover adicione a classe "table-hover" a tabela.-->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>João</td>
+                <td>Soares</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacó</td>
+                <td>Marcelo</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry o passaro</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Podemos definir tamanhos para nossas tabelas</h2>
+    <!--Ajustamos o tamanho de nossa tablema adicionando a classe "table-" + uma unidade de medida do bootstrap.-->
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>João</td>
+                <td>Soares</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacó</td>
+                <td>Marcelo</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry o passaro</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Podemos criar tabelas responsivas</h2>   
+    <!--Para criar uma tabela responsiva, envolva ela em um elemento que contenha a classe "table-responsive"--> 
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>João</td>
+                    <td>Soares</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacó</td>
+                    <td>Marcelo</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry o passaro</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>Estrutura básica de paginação</h2>
+    <!--Para estilzizar nossa paginação precisaremos utilizar as seguintes tags em cada uma das divs:-->
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+        </ul>
+    </nav>
+
+
+    <h2>Pagínação com setas</h2>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+    </nav>
+
+    <h2>Itens desativados e selecionados</h2>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item active"><a href="#" class="page-link">3</a></li>
+            <li class="page-item disabled"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+    </nav>
+
+    <h2>Páginações com diferentes tamanhos</h2>    
+    <nav>
+        <ul class="pagination pagination-sm">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item active"><a href="#" class="page-link">3</a></li>
+            <li class="page-item disabled"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+    </nav>
+    
+    <nav>
+        <ul class="pagination pagination-lg">
+            <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item active"><a href="#" class="page-link">3</a></li>
+            <li class="page-item disabled"><a href="#" class="page-link">&raquo;</a></li>
+        </ul>
+    </nav>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

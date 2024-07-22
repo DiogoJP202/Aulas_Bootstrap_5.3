@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="m-5">
+    <h2 class="my-2">Habilitando os comportamentos de flex</h2>
+    <!--Para habilitar o comportamento de flex, usamos a classe "d-flex"-->
+    <div class="d-flex bg-warning text-light p-2 m-2">Eu sou um conteiner flex!</div>
+
+    <!--Também tem a versão inline:-->
+    <div class="d-inline-flex bg-warning text-light p-2 m-2">Eu sou um conteiner inline flex!</div>
+
+    <h2 class="my-2">Direções</h2>
+    <!--Podemos definir a direção de nossos elementos.-->
+    <div class="d-flex flex-column bg-warning text-light p-2 m-2">
+        <div class="p-2">Item 1</div>
+        <div class="p-2">Item 2</div>
+        <div class="p-2">Item 3</div>
+    </div>
+    <div class="d-flex flex-column-reverse bg-warning text-light p-2 m-2">
+        <div class="p-2">Item 1</div>
+        <div class="p-2">Item 2</div>
+        <div class="p-2">Item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-warning text-light p-2 m-2">
+        <div class="p-2">Item 1</div>
+        <div class="p-2">Item 2</div>
+        <div class="p-2">Item 3</div>
+    </div>
+    <div class="d-flex flex-row-reverse bg-warning text-light p-2 m-2">
+        <div class="p-2">Item 1</div>
+        <div class="p-2">Item 2</div>
+        <div class="p-2">Item 3</div>
+    </div>
+
+    <h2 class="my-2">Justify-content</h2>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-start">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-center">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-end">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-between">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-around">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+
+    <h2 class="my-2">Align-items</h2>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-start" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-center" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-end" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-baseline" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-stretch" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+
+    <h2 class="my-2">Align self</h2>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-stretch" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger align-self-start">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-stretch" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger align-self-center">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-stretch" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger align-self-end">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-stretch" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger align-self-baseline">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+    <div class="d-flex flex-row bg-primary text-light p-2 m-2 justify-content-evenly align-items-stretch" style="height: 100px;">
+        <div class="p-2 bg-danger">item 1</div>
+        <div class="p-2 bg-danger align-self-scretch">item 2</div>
+        <div class="p-2 bg-danger">item 3</div>
+    </div>
+
+    <h2 class="my-2">Flex Fill</h2>
+    <div class="d-flex">
+        <div class="p-2 flex-fill bg-primary text-light p-2 m-2 justify-content-evenly">Flex item</div>
+        <div class="p-2 flex-fill bg-primary text-light p-2 m-2 justify-content-evenly">Flex item</div>
+        <div class="p-2 flex-fill bg-primary text-light p-2 m-2 justify-content-evenly">Flex item</div>
+    </div>
+
+    <h2 class="my-2">Grow and Shrink</h2>
+
+    <div class="d-flex">
+        <div class="p-2 bg-primary text-light p-2 m-2 flex-grow-1">Flex Item</div>
+        <div class="p-2 bg-primary text-light p-2 m-2">Flex Item</div>
+        <div class="p-2 bg-primary text-light p-2 m-2 flex-grow-1">Flex Item</div>
+    </div>
+
+   <h2 class="my-2">Auto Margin</h2> 
+   <div class="d-flex mb-3">
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+   </div>
+
+   <div class="d-flex mb-3">
+        <div class="me-auto p-2 bg-primary text-light">Flex Item</div>
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+   </div>
+
+   <div class="d-flex mb-3">
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+        <div class="ms-auto p-2 bg-primary text-light">Flex Item</div>
+   </div>
+
+   <h2 class="my-2">Auto margin com align-items</h2>
+
+   <div class="d-flex mb-3 align-items-start flex-column" style="height: 200px;">
+        <div class="mb-auto p-2 bg-primary text-light">Flex Item</div>
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+   </div>
+
+   <div class="d-flex mb-3 flex-column align-items-end" style="height: 200px;">
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+        <div class="p-2 bg-primary text-light">Flex Item</div>
+        <div class="mt-auto p-2 bg-primary text-light">Flex Item</div>
+   </div>
+
+    <h2 class="my-2">Wrap</h2>
+    <div class="d-flex flex-wrap">
+        <div class="p-2 bg-primary text-light">Flex Item 1</div>
+        <div class="p-2 bg-primary text-light">Flex Item 2</div>
+        <div class="p-2 bg-primary text-light">Flex Item 3</div>
+        <div class="p-2 bg-primary text-light">Flex Item 4</div>
+        <div class="p-2 bg-primary text-light">Flex Item 5</div>
+        <div class="p-2 bg-primary text-light">Flex Item 6</div>
+        <div class="p-2 bg-primary text-light">Flex Item 7</div>
+        <div class="p-2 bg-primary text-light">Flex Item 8</div>
+        <div class="p-2 bg-primary text-light">Flex Item 9</div>
+        <div class="p-2 bg-primary text-light">Flex Item 10</div>
+        <div class="p-2 bg-primary text-light">Flex Item 11</div>
+        <div class="p-2 bg-primary text-light">Flex Item 12</div>
+        <div class="p-2 bg-primary text-light">Flex Item 13</div>
+        <div class="p-2 bg-primary text-light">Flex Item 14</div>
+    </div> 
+
+    <h2 class="my-2">Wrap-reverse</h2>
+    <div class="d-flex flex-wrap-reverse">
+        <div class="p-2 bg-primary text-light">Flex Item 1</div>
+        <div class="p-2 bg-primary text-light">Flex Item 2</div>
+        <div class="p-2 bg-primary text-light">Flex Item 3</div>
+        <div class="p-2 bg-primary text-light">Flex Item 4</div>
+        <div class="p-2 bg-primary text-light">Flex Item 5</div>
+        <div class="p-2 bg-primary text-light">Flex Item 6</div>
+        <div class="p-2 bg-primary text-light">Flex Item 7</div>
+        <div class="p-2 bg-primary text-light">Flex Item 8</div>
+        <div class="p-2 bg-primary text-light">Flex Item 9</div>
+        <div class="p-2 bg-primary text-light">Flex Item 10</div>
+        <div class="p-2 bg-primary text-light">Flex Item 11</div>
+        <div class="p-2 bg-primary text-light">Flex Item 12</div>
+        <div class="p-2 bg-primary text-light">Flex Item 13</div>
+        <div class="p-2 bg-primary text-light">Flex Item 14</div>
+    </div> 
+
+    <h2 class="my-2">No wrap</h2>
+    <div class="d-flex flex-nowrap">
+        <div class="p-2 bg-primary text-light">Flex Item 1</div>
+        <div class="p-2 bg-primary text-light">Flex Item 2</div>
+        <div class="p-2 bg-primary text-light">Flex Item 3</div>
+        <div class="p-2 bg-primary text-light">Flex Item 4</div>
+        <div class="p-2 bg-primary text-light">Flex Item 5</div>
+        <div class="p-2 bg-primary text-light">Flex Item 6</div>
+        <div class="p-2 bg-primary text-light">Flex Item 7</div>
+        <div class="p-2 bg-primary text-light">Flex Item 8</div>
+        <div class="p-2 bg-primary text-light">Flex Item 9</div>
+        <div class="p-2 bg-primary text-light">Flex Item 10</div>
+        <div class="p-2 bg-primary text-light">Flex Item 11</div>
+        <div class="p-2 bg-primary text-light">Flex Item 12</div>
+        <div class="p-2 bg-primary text-light">Flex Item 13</div>
+        <div class="p-2 bg-primary text-light">Flex Item 14</div>
+    </div> 
+
+    <h2 class="my-2">Order</h2>
+    <div class="d-flex flex-nowrap">
+        <div class="order-3 p-2 bg-primary text-light">First flex item</div>
+        <div class="order-2 p-2 bg-primary text-light">Second flex item</div>
+        <div class="order-1 p-2 bg-primary text-light">Third flex item</div>
+    </div>
+
+    <h2 class="my-2">Align Content</h2>
+    <div class="d-flex flex-wrap align-content-start border" style="height: 200px;">
+        <div class="p-2 bg-primary text-light">Flex Item 1</div>
+        <div class="p-2 bg-primary text-light">Flex Item 2</div>
+        <div class="p-2 bg-primary text-light">Flex Item 3</div>
+        <div class="p-2 bg-primary text-light">Flex Item 4</div>
+        <div class="p-2 bg-primary text-light">Flex Item 5</div>
+        <div class="p-2 bg-primary text-light">Flex Item 6</div>
+        <div class="p-2 bg-primary text-light">Flex Item 7</div>
+        <div class="p-2 bg-primary text-light">Flex Item 8</div>
+        <div class="p-2 bg-primary text-light">Flex Item 9</div>
+        <div class="p-2 bg-primary text-light">Flex Item 10</div>
+        <div class="p-2 bg-primary text-light">Flex Item 11</div>
+        <div class="p-2 bg-primary text-light">Flex Item 12</div>
+        <div class="p-2 bg-primary text-light">Flex Item 13</div>
+        <div class="p-2 bg-primary text-light">Flex Item 14</div>
+    </div>
+
+    <div class="d-flex flex-wrap align-content-center border" style="height: 200px;">
+        <div class="p-2 bg-primary text-light">Flex Item 1</div>
+        <div class="p-2 bg-primary text-light">Flex Item 2</div>
+        <div class="p-2 bg-primary text-light">Flex Item 3</div>
+        <div class="p-2 bg-primary text-light">Flex Item 4</div>
+        <div class="p-2 bg-primary text-light">Flex Item 5</div>
+        <div class="p-2 bg-primary text-light">Flex Item 6</div>
+        <div class="p-2 bg-primary text-light">Flex Item 7</div>
+        <div class="p-2 bg-primary text-light">Flex Item 8</div>
+        <div class="p-2 bg-primary text-light">Flex Item 9</div>
+        <div class="p-2 bg-primary text-light">Flex Item 10</div>
+        <div class="p-2 bg-primary text-light">Flex Item 11</div>
+        <div class="p-2 bg-primary text-light">Flex Item 12</div>
+        <div class="p-2 bg-primary text-light">Flex Item 13</div>
+        <div class="p-2 bg-primary text-light">Flex Item 14</div>
+    </div>
+
+    <div class="d-flex flex-wrap align-content-end border" style="height: 200px;">
+        <div class="p-2 bg-primary text-light">Flex Item 1</div>
+        <div class="p-2 bg-primary text-light">Flex Item 2</div>
+        <div class="p-2 bg-primary text-light">Flex Item 3</div>
+        <div class="p-2 bg-primary text-light">Flex Item 4</div>
+        <div class="p-2 bg-primary text-light">Flex Item 5</div>
+        <div class="p-2 bg-primary text-light">Flex Item 6</div>
+        <div class="p-2 bg-primary text-light">Flex Item 7</div>
+        <div class="p-2 bg-primary text-light">Flex Item 8</div>
+        <div class="p-2 bg-primary text-light">Flex Item 9</div>
+        <div class="p-2 bg-primary text-light">Flex Item 10</div>
+        <div class="p-2 bg-primary text-light">Flex Item 11</div>
+        <div class="p-2 bg-primary text-light">Flex Item 12</div>
+        <div class="p-2 bg-primary text-light">Flex Item 13</div>
+        <div class="p-2 bg-primary text-light">Flex Item 14</div>
+    </div>
+
+    <div class="d-flex flex-wrap align-content-between border" style="height: 200px;">
+        <div class="p-2 bg-primary text-light">Flex Item 1</div>
+        <div class="p-2 bg-primary text-light">Flex Item 2</div>
+        <div class="p-2 bg-primary text-light">Flex Item 3</div>
+        <div class="p-2 bg-primary text-light">Flex Item 4</div>
+        <div class="p-2 bg-primary text-light">Flex Item 5</div>
+        <div class="p-2 bg-primary text-light">Flex Item 6</div>
+        <div class="p-2 bg-primary text-light">Flex Item 7</div>
+        <div class="p-2 bg-primary text-light">Flex Item 8</div>
+        <div class="p-2 bg-primary text-light">Flex Item 9</div>
+        <div class="p-2 bg-primary text-light">Flex Item 10</div>
+        <div class="p-2 bg-primary text-light">Flex Item 11</div>
+        <div class="p-2 bg-primary text-light">Flex Item 12</div>
+        <div class="p-2 bg-primary text-light">Flex Item 13</div>
+        <div class="p-2 bg-primary text-light">Flex Item 14</div>
+    </div>
+
+    <div class="d-flex flex-wrap align-content-around border" style="height: 200px;">
+        <div class="p-2 bg-primary text-light">Flex Item 1</div>
+        <div class="p-2 bg-primary text-light">Flex Item 2</div>
+        <div class="p-2 bg-primary text-light">Flex Item 3</div>
+        <div class="p-2 bg-primary text-light">Flex Item 4</div>
+        <div class="p-2 bg-primary text-light">Flex Item 5</div>
+        <div class="p-2 bg-primary text-light">Flex Item 6</div>
+        <div class="p-2 bg-primary text-light">Flex Item 7</div>
+        <div class="p-2 bg-primary text-light">Flex Item 8</div>
+        <div class="p-2 bg-primary text-light">Flex Item 9</div>
+        <div class="p-2 bg-primary text-light">Flex Item 10</div>
+        <div class="p-2 bg-primary text-light">Flex Item 11</div>
+        <div class="p-2 bg-primary text-light">Flex Item 12</div>
+        <div class="p-2 bg-primary text-light">Flex Item 13</div>
+        <div class="p-2 bg-primary text-light">Flex Item 14</div>
+    </div>
+
+    <div class="d-flex flex-wrap align-content-stretch border" style="height: 200px;">
+        <div class="p-2 bg-primary text-light">Flex Item 1</div>
+        <div class="p-2 bg-primary text-light">Flex Item 2</div>
+        <div class="p-2 bg-primary text-light">Flex Item 3</div>
+        <div class="p-2 bg-primary text-light">Flex Item 4</div>
+        <div class="p-2 bg-primary text-light">Flex Item 5</div>
+        <div class="p-2 bg-primary text-light">Flex Item 6</div>
+        <div class="p-2 bg-primary text-light">Flex Item 7</div>
+        <div class="p-2 bg-primary text-light">Flex Item 8</div>
+        <div class="p-2 bg-primary text-light">Flex Item 9</div>
+        <div class="p-2 bg-primary text-light">Flex Item 10</div>
+        <div class="p-2 bg-primary text-light">Flex Item 11</div>
+        <div class="p-2 bg-primary text-light">Flex Item 12</div>
+        <div class="p-2 bg-primary text-light">Flex Item 13</div>
+        <div class="p-2 bg-primary text-light">Flex Item 14</div>
+    </div>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

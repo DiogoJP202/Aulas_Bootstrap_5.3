@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas e Barras de carregamento</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="m-5">
+    <h2>Alertas</h2> 
+    <!--Utilizamos a classe 'alert' para dar o design para o elemento de alerta. Podemos customizar as cores usando a classe "alert-" + a cor.-->
+    <div class="alert alert-primary">Um alerta usando a cor primary!</div>
+    <div class="alert alert-secondary">Um alerta usando a cor secondary!</div>
+    <div class="alert alert-success">Um alerta usando a cor success!</div>
+    <div class="alert alert-danger">Um alerta usando a cor danger!</div>
+    <div class="alert alert-warning">Um alerta usando a cor warning!</div>
+    <div class="alert alert-info">Um alerta usando a cor info!</div>
+    <div class="alert alert-light">Um alerta usando a cor light!</div>
+    <div class="alert alert-dark">Um alerta usando a cor dark!</div>
+    
+    <h2>Alertas com mais conteúdo</h2>
+    <!--Podemos adicionar conteúdos adicionais dentro de nossos alertas.-->
+    <div class="alert alert-success">
+        <!--Como o nome já sugere, utilizamos a classe "alert-heading" para dar o estilo de cabeçalho para o nosso elemento alert.-->
+        <h2 class="alert-heading">Well Done!</h2>
+        <p>aww yeah, you successfully read this important alert message.</p>
+        <hr>
+        <p>whenever you need to, be sure to use margin utilities to keep things nice and tidy!</p>
+    </div>
+
+    <h2>Barras de progresso</h2>
+    <!--Para criar uma barra de progresso, primeira mente precisaremos criar um conteiner com a classe "progress", após isso, crie um elemento filho com a classe "progress-bar", por fim indique o seu tamanho.-->
+    <div class="progress my-2">
+        <div class="progress-bar" style="width: 0%"></div>
+    </div>
+
+    <div class="progress my-2">
+        <div class="progress-bar" style="width: 25%"></div>
+    </div>
+
+    <div class="progress my-2">
+        <div class="progress-bar" style="width: 50%"></div>
+    </div>
+
+    <div class="progress my-2">
+        <div class="progress-bar" style="width: 75%"></div>
+    </div>
+
+    <div class="progress my-2">
+        <div class="progress-bar" style="width: 100%"></div>
+    </div>
+
+    <h2>Indicando tamanho via classes</h2>
+    <div class="progress my-2">
+        <div class="progress-bar w-50"></div>
+    </div>
+
+    <h2>Podemos definir a altura das barras</h2>
+    <div class="progress my-2" style="height: 2px;">
+        <div class="progress-bar w-50" ></div>
+    </div>
+    
+    <div class="progress my-2" style="height: 2px;">
+        <div class="progress-bar w-75" ></div>
+    </div>
+
+    <h2>Podemos adicionar etiquetas ou textos dentro de nossas barra de progresso</h2>
+    <div class="progress my-2">
+        <!--Adiocionamos um texto no conteudo da div abaixo.-->
+        <div class="progress-bar w-25">25%</div>
+    </div>
+
+    <h2>Podemos adicionar cores de fundo a nossas barras</h2>
+    <div class="progress my-2">
+        <div class="progress-bar w-25 bg-success"></div>
+    </div>
+    <div class="progress my-2">
+        <div class="progress-bar w-50 bg-primary"></div>
+    </div>
+    <div class="progress my-2">
+        <div class="progress-bar w-75 bg-warning"></div>
+    </div>
+    <div class="progress my-2">
+        <div class="progress-bar w-100 bg-danger"></div>
+    </div>
+
+    <h2>Multiplas barras</h2>
+    <!--Podemos criar uma barra de progresso com mais de um campo usando uma classe pai com a classe "progress-stacked"-->
+    <div class="progress-stacked">
+        <div class="progress" style="width: 10%;">
+            <div class="progress-bar bg-success">10%</div>
+        </div>
+        <div class="progress" style="width: 20%;">
+            <div class="progress-bar bg-warning">20%</div>
+        </div>
+        <div class="progress" style="width: 30%;">
+            <div class="progress-bar bg-danger">30%</div>
+        </div>
+    </div>
+    
+    <h2>Podemos criar barras de progresso listadas</h2>
+    <div class="progress my-1">
+        <!--Para deixar barras de progresso listradas basta colocar a classe "progress-bar-striped"-->
+        <div class="progress-bar progress-bar-striped w-25"></div>
+    </div>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

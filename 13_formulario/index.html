@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0"> <!--'shrink' significa encolher.-->
+    <title>Formulários</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="m-5">
+    <h2 class="my-3">Lista simples</h2>
+    <form>
+        <div class="mb-3">
+            <!--Estilizamos a tag <label> com a classe "form-label"-->
+            <label for="exemploDeInputEmail" class="form-label">Endereço de email</label>
+            <!--Estilizamos um input do tipo email com a classe "form-control".-->
+            <input type="email" class="form-control" id="exemploDeInputEmail">
+            <!--Também podemos estilizar um texto dentro de um formulário com a classe "form-text".-->
+            <div id="emailHelp" class="form-text">Nós não compartilhamos o seu email com ninguem.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exemploDeInputSenha" class="form-label">Senha</label>
+            <!--Podemos usar a classe "form-control" para estilizar o input de senha. -->
+            <input type="password" class="form-control" id="exemploDeInputSenha">
+        </div>
+        <!--Colocamos uma div com a classe "form-check" para colocar nossos inputs de checagem.-->
+        <div class="mb-3 form-check">
+            <!--Podemos estilizar um input check com a classe "form-check-input".-->
+            <input type="checkbox" class="form-check-input" id="exemploDeInputCheck">
+            <!--Também estilizamos o label dos inputs com a classe "form-check-label".-->
+            <label class="form-check-label" for="exemploDeInputCheck">Cheque me!</label>
+        </div>
+        <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+
+    <h2 class="my-3">Lista com inputs desativados</h2>
+
+    <form>
+        <fieldset disabled>
+            <legend>Exemplo de fildset desativado</legend>
+            <div class="mb-3">
+                <label for="InputDeTextoDesativado" class="form-label">Input desativado</label>
+                <input type="text" id="InputDeTextoDesativado" class="form-control" placeholder="Input desativado">
+            </div>
+            <div class="mb-3">
+                <label for="SelectDesativado" class="form-label">Menu select desativado</label>
+                <!--Usamos a classe "form-select" para estilizar o select.-->
+                <select id="SelectDesativado" class="form-select">
+                    <option>Select desativado</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                    <label class="form-check-label" for="disabledFieldsetCheck">
+                        Você não consegue marcar isso!
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+
+    <h2 class="my-2">Usando Select</h2>
+
+    <!--Usamos a classe "form-select" para estilizar o select.-->
+    <select class="form-select">
+        <!--Usamos o parâmetro 'selected' para deixar um elemento selecionado.-->
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+
+    <h2 class="my-2">Usando inputs range</h2>
+
+    <label for="rangeCustomizado" class="form-label">Example range</label>
+    <!--Usamos a classe 'form-range' para customizar um input range.-->
+    <input type="range" class="form-range" id="rangeCustomizado">   
+
+    <h2 class="my-2">Usando inputs de arquivos</h2>
+
+    <div>
+        <label for="Iarquivo" class="form-label">Selecione o arquivo</label>
+        <input type="file" name="arquivo" id="Iarquivo" class="form-control">
+    </div>
+
+    <h2 class="my-2">Formulários Inline</h2>
+    <!--Usamos a funcionalidade grid do bootstrap para deixar os elementos inline-->
+    <form class="container row">
+        <input type="text" name="User" id="IUser" class="form-control col" placeholder="Digite seu usuário">
+        <input type="password" name="password" id="IPass" class="form-control col">
+        <input type="submit" value="Logar" class="form-control col">
+    </form>
+
+    <h2>Validado formulário</h2>
+
+    <form class="container row">
+        <!--Podemos adicionar a classe "is-invalid" para mostrar que algum input está inválido. O contrário acontece com a classe "is-valid"-->
+        <input type="text" name="User" id="IUser" class="form-control is-invalid bg-dark font-dark" placeholder="Digite seu usuário">
+        
+        <!--Podemos criar um texto que mostrará acompanhará as validações da classe. Precisamos colocar uma classe "valid-feedback" ou "invalid-feedback".-->
+        <p class="invalid-feedback">Nome Inválido!</p>
+    
+        <input type="password" name="password" id="IPass" class="form-control is-valid">
+        <p class="valid-feedback">Senha válida!</p>
+        <input type="submit" value="Logar" class="form-control">
+    </form>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

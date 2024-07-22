@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+    <title>Grupo de listas</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="m-5">
+        <h2 class="my-2">Listas não ordenadas</h2>
+        <ul class="list-group">
+            <!--Podemos adionar a classe "active" para deixar uma lista com estilização de selecionada. O contrário acontece ao adicionarmos a classe "disabled", entre tanto, não há mudança em seu estilo, apenas em eventos javascript.-->
+            <li class="list-group-item active">Primeiro item</li>
+            <li class="list-group-item">Segundo item</li>
+            <li class="list-group-item">Terceiro item</li>
+            <li class="list-group-item disabled">Quarto item</li>
+            <li class="list-group-item">Quinto item</li>
+        </ul>
+
+        <h2 class="my-2">Links e botões</h2>
+        <!-- Caso optermos por utilizar botões, não coloque a classe "btn" neles.-->
+        <div class="list-group">
+            <!--Usamos o parâmetro "aria-current="true"" para dizer que um elemento está selecionado. Recurso de acessibilidade.-->
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">Primeiro item</a>
+            <a href="#" class="list-group-item list-group-item-action active">Segundo item</a>
+            <a href="#" class="list-group-item list-group-item-action">Terceiro item</a>
+            <a href="#" class="list-group-item list-group-item-action">Quarto item</a>
+            <!--Usamos o parâmetro "aria-current="true"" para dizer que um elemento está desativado. Recurso de acessibilidade.-->
+            <a href="#" class="list-group-item list-group-item-action" aria-disabled="true">Quinto item</a>
+        </div>
+
+        <h2 class="my-2">Listas flush</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item active">Primeiro item</li>
+            <li class="list-group-item">Segundo item</li>
+            <li class="list-group-item">Terceiro item</li>
+            <li class="list-group-item">Quarto item</li>
+            <li class="list-group-item">Quinto item</li>
+        </ul>
+
+        <h2 class="my-2">Listas ordenadas</h2>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Um item de lista</li>
+            <li class="list-group-item">Um item de lista</li>
+            <li class="list-group-item">Um item de lista</li>
+        </ol>
+
+        <h2 class="my-2">Conteúdo em Li customizados</h2>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                    </div>
+                    <!--A classe "bedge" customiza um elemento para se tornar um emblema.-->
+                    <span class="badge text-bg-warning rounded-pill">1</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                    </div>
+                    <span class="badge text-bg-warning rounded-pill">2</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                    </div>
+                    <span class="badge text-bg-warning rounded-pill">3</span>
+                </li>
+            </ol>
+
+            <h2 class="my-2">Listas Horizontais</h2>
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Primeiro item</li>
+                <li class="list-group-item">Segundo item</li>
+                <li class="list-group-item">Terceiro item</li>
+            </ul>
+
+            <h2 class="my-2">Listas com cores</h2>
+            <ul class="list-group">
+                <li class="list-group-item">A simple default list group item</li>
+              
+                <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+                <li class="list-group-item list-group-item-success">A simple success list group item</li>
+                <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                <li class="list-group-item list-group-item-info">A simple info list group item</li>
+                <li class="list-group-item list-group-item-light">A simple light list group item</li>
+                <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+            </ul>
+
+            <h2 class="my-2">Lists Breadcrumb</h2>
+            <!--Breadcrumb-->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

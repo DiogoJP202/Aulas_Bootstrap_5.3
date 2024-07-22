@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+    <title>Dropdown Buttons</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <h2>Dropdown Button</h2>
+
+    <div class="dropdown">
+        <!--A classe 'dropdown-toggle' apenas da o estilo de um 'trocador de estado', o que realmente faz a ação de troca de estado ocorrer é o parâmetro 'data-bs-toggle'.-->
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown Button</button>
+        
+        <!--A classe "dropdown-menu" ficará no elemento que vai conter os links ou listas do dropdown.-->
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Action</a></li>
+            <li><a href="#" class="dropdown-item">Another Action</a></li>
+            <li><a href="#" class="dropdown-item">Something else here</a></li>
+        </ul>
+        <p>Esse texto ficou de fora do dropdown!</p>
+    </div>
+
+    <h2>Dropdown Button usando um link</h2>
+
+    <div class="dropdown">
+        <!--Quando houver a necessidade de usar um link ao invés de um botão como "toggler" é recomendado usar o parâmetro 'role="button"' para desiginar o propósito de controle para tecnologias de acessibilildade.-->
+        <a href="#" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" role="button">Dropdown Link</a>
+
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Action</a></li>
+            <li><a href="#" class="dropdown-item">Another Action</a></li>
+            <li><a href="#" class="dropdown-item">Something else here</a></li>
+        </ul>
+    </div>
+
+    <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

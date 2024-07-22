@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+    <title>Barra de navegação</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <h2>Barra de navegação simples com menu responsivo</h2>
+    <!--navbar-expand-sm Formata nossos Ul para ficarem em coluna em um determinado tamanho de tela-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!--Barra de navegação-->
+        <!--Logo-->
+        <a href="#" class="navbar-brand">Logo</a> 
+
+        <!--Menu Hamburger-->
+        <!--data-bs-toggle identifica o que será ativado(que tipo de ação ele irá fazer, no caso a ação de "toggler") e o data-bs-target identifica qual elemento afetado por essa ação-->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-target">
+            <!--A classe "navbar-toggler-icon" da o estilo das 3 barras do menu hamburger-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--navegação-->
+        <div class="collapse navbar-collapse" id="nav-target"> <!--Div que esconderá a nossa navegação-->
+            <ul class="navbar-nav"> <!--Onde ficaram os containers dos links-->
+                <li class="nav-item"> <!--Onde ficara o link-->
+                    <a href="#" class="nav-link" aria-current="page">Home</a> <!--Próprio link-->
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

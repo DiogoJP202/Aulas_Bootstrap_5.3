@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+    <title>Barras de navegação</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <h2>Navegação simples</h2>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Serviços</a>
+        </li>
+    </ul>
+
+    <!--A navegação também pode ser feita sem as listas-->    
+    <h2>Navegação simples</h2>
+    <nav class="nav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Sobre</a>
+        <a href="#" class="nav-link">Serviços</a>
+    </nav>
+
+    <h2>Navegação com abas</h2>
+
+    <ul class="nav nav-tabs justify-content-center flex-sm-column">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Serviços</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">link</a>
+        </li>
+    </ul>
+
+    <h2>Barra de navegação simples</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!--Barra de navegação-->
+        <a href="#" class="navbar-brand">Logo</a> <!--"navbar-brand" = logo da navbar-->
+
+        <ul class="navbar-nav ms-auto"> <!--Onde ficaram os containers dos links-->
+            <li class="nav-item"> <!--Onde ficara o link-->
+                <a href="#" class="nav-link">Home</a> <!--Próprio link-->
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Serviços</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

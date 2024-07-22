@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+    <title>Barra de navegação</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <h2>Barra de navegação simples com formulário</h2>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!--"container-fluid" Deixa a largura da tela em 100% em todos os breakpoints-->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarID">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--A classe "collapse" e "navbar-collapse" faz com que o elemento se agrupe e se esconde juntamente com seus conteúdos.-->
+          <div class="collapse navbar-collapse" id="navBarID">
+            <!--A classe "navbar-nav" adiciona o estilo de navegação dos links/items.-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <!--O parâmetro "role" fala qual sera o papel de um elemento. Neste caso, o papel de "form" é "search"-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <h2>Alinhamentos</h2>
+
+      <h2>Barra de navegação simples com formulário</h2>
+      <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-primary">
+          <!--"container-fluid" Deixa a largura da tela em 100% em todos os breakpoints-->
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarID2">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--A classe "collapse" e "navbar-collapse" faz com que o elemento se agrupe e se esconde juntamente com seus conteúdos.-->
+            <div class="collapse navbar-collapse" id="navBarID2">
+              <!--A classe "navbar-nav" adiciona o estilo de navegação dos links/items.-->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <!--O parâmetro "role" fala qual sera o papel de um elemento. Neste caso, o papel de "form" é "search"-->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=0">
+    <title>Cartões</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="m-5">
+    <h2>Estrutura básica de cartas</h2>
+    <!--No elemento pai adicionamos a classe "card" juntamente com um estilo de largura-->
+    <div class="card" style="width: 18rem;">
+        <!--Para estilizar imagens de top usamos a classe "card-img-top". Também podemos usar a classe "card-img-bottom", mas teriamos que colocar a tag <img> mais abaixo.-->
+        <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="..." class="card-img-top">
+        <!--Para definir a estilização do conteúdo do corpo de nossa carta, utilizaremos uma tag juntamente com classe "card-body"-->
+        <div class="card-body">
+            <!--Utilizamos a classe "card-title" para dar o estilo de titulo na classe. A mesma coisa acontece com a tag <p> com a classe "card-text"-->
+            <h5 class="card-title">Titúlo da carta</h5>
+            <p class="card-text">Algum texto curto aqui!</p>
+            <a href="#" class="btn btn-primary">Vai para algum lugar</a>
+        </div>
+    </div>
+
+    <h2>Títulos, textos e links</h2>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Título da carta</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Subtítulo da carta</h6>
+            <p class="card-text">texto lonngo aquiiiiii jdajkhfjdshajkfhakkashdkjhjkhf</p>
+            <a href="#" class="card-link">Link</a>
+            <a href="#" class="card-link">Link</a>
+        </div>
+    </div>
+
+    <h2>Grupo de listas</h2>
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Item 1</li>
+            <li class="list-group-item">Item 2</li>
+            <li class="list-group-item">Item 3</li>
+        </ul>
+    </div>
+
+    <h2>Juntando tudo</h2>
+    <div class="card" style="width: 18rem;">
+        <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="..." class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+
+    <h2>Carta com cabeçalho</h2>
+    <div class="card">
+        <div class="card-header">Aqui é o header</div>
+        <div class="card-body">
+            <h5 class="card-title">Titulo especial</h5>
+            <p class="card-text">texto ahhfhjhajfhdfajjkadjfkljalfaylfklajdfklkjafjakljdfkljkldfjklj</p>
+            <a href="#" class="btn btn-primary">Link</a>
+        </div>
+    </div>
+
+    <h2>Usando blockquote</h2>
+    <div class="card">
+        <div class="card-header">Quote</div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Uma citação bem conhecida, armazenada em um elemento blockquote.</p>
+                <footer class="blockquote-footer">Alguém famoso em <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+
+    <h2>Alinhamentos</h2>
+    <div class="card mb-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <!--Para alinhar os textos usamos a classe "text-" + direção-->
+    <div class="card text-center mb-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card text-end" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+            2 days ago
+        </div>
+    </div>
+
+    <h2>Utilizando nevegações</h2>
+    <div class="card text-center">
+        <div class="card-header">
+            <!--Utilizando as classe de uma navegação-->
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <h2>Utilizando imagens</h2>
+
+    <div class="card text-bg-dark text-center" style="width: 20rem;">
+        <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="Gatinho verde" class="card-img">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <h2>Definindo cores de fundos</h2>
+
+    <!--Para definir cores de fundo, apenas precisamos adicionar a classe "text-bg-" + a cor.-->
+    <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header text-bg-success">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header text-bg-primary">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Secondary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+        <div class="card-header text-bg-secondary">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>  
+    </div>
+
+    <h2>Estilizando bordas</h2>
+    <!--Para estilizar as borda precisamos utilizar a classe "border-" + a cor.-->
+    <div class="card border-danger mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body text-danger">
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card border-warning mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card border-info mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+
+    <h2>Juntando as ultimas opções</h2>
+    <div class="card border-success mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-success">Header</div>
+        <div class="card-body text-success">
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer bg-transparent border-success">Footer</div>
+    </div>
+
+    <h2>Grupos de cartas</h2>
+    <!--Podemos utilizar grupos de cartões para deixar uma determinado grupo de cartas responsivo-->
+    <div class="card-group">
+        <div class="card">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="..." class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Titúlo da carta</h5>
+                <p class="card-text">Algum texto curto aqui!</p>
+                <a href="#" class="btn btn-primary">Vai para algum lugar</a>
+            </div>
+            <!--Quando utilizamos o footer, ele já é alinhado automaticamente-->
+            <div class="card-footer">
+                <small class="text-body-secondary">O footer já é colocado no final.</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="..." class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Titúlo da carta</h5>
+                <p class="card-text">Algum texto curto aqui!</p>
+                <a href="#" class="btn btn-primary">Vai para algum lugar</a>
+            </div>
+            <!--Quando utilizamos o footer, ele já é alinhado automaticamente-->
+            <div class="card-footer">
+                <small class="text-body-secondary">O footer já é colocado no final.</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="..." class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Titúlo da carta</h5>
+                <p class="card-text">Algum texto curto aqui!</p>
+                <a href="#" class="btn btn-primary">Vai para algum lugar</a>
+            </div>
+            <!--Quando utilizamos o footer, ele já é alinhado automaticamente-->
+            <div class="card-footer">
+                <small class="text-body-secondary">O footer já é colocado no final.</small>
+            </div>
+        </div>
+    </div>
+
+    <h2>Podemos definir a direção de nossas cartas</h2>
+    <!--Podemos definir a direção das nossas cartas de acordo com a tela.-->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Titúlo da carta</h5>
+                    <p class="card-text">Algum texto curto aqui!</p>
+                    <a href="#" class="btn btn-primary">Vai para algum lugar</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">O footer já é colocado no final.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Titúlo da carta</h5>
+                    <p class="card-text">Algum texto curto aqui!</p>
+                    <a href="#" class="btn btn-primary">Vai para algum lugar</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">O footer já é colocado no final.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Titúlo da carta</h5>
+                    <p class="card-text">Algum texto curto aqui!</p>
+                    <a href="#" class="btn btn-primary">Vai para algum lugar</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">O footer já é colocado no final.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://uploads.metropoles.com/wp-content/uploads/2023/10/16155245/Gato-adotado-por-lojista-nasce-com-pelo-verde-Milagre-da-natureza-2.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Titúlo da carta</h5>
+                    <p class="card-text">Algum texto curto aqui!</p>
+                    <a href="#" class="btn btn-primary">Vai para algum lugar</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">O footer já é colocado no final.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>    
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
